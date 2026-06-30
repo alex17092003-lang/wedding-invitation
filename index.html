@@ -699,7 +699,7 @@ document.querySelectorAll('input[name="attend"]').forEach(function(r) {
 
       // Собираем данные
       var attend = document.querySelector('input[name="attend"]:checked');
-      var transfer = document.querySelector('input[name="transfer"]:checked');
+      
       var food = document.querySelector('input[name="food"]:checked');
 
       // Собираем алкоголь (чекбоксы)
@@ -716,7 +716,7 @@ document.querySelectorAll('input[name="attend"]').forEach(function(r) {
         name: name,
         attend: attend ? attend.value : '',
         pair: document.getElementById('pair-field').classList.contains('hidden') ? '' : document.getElementById('pname').value.trim(),
-        transfer: transfer ? transfer.value : '',
+        
         alcohol: alcoholList.join(', '),
         food: food ? food.value : '',
         allergy: document.getElementById('allergy').value.trim()
